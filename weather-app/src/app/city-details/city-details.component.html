@@ -1,0 +1,9 @@
+<!-- city-detail.component.html -->
+<div *ngIf="city">
+  <h2>{{ city.name }} Details</h2>
+  <div>
+    <p>Temperature: {{ city.temperature }}°{{ temperatureUnit }}</p>
+    <p>Weather Condition: {{ city.weatherCondition }}</p>
+    <!-- Add other city details as needed -->
+  </div>
+</div>

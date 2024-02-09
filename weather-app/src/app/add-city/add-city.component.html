@@ -1,0 +1,13 @@
+<!-- add-city.component.html -->
+
+<form (ngSubmit)="addCity()">
+  <label for="name">City Name:</label>
+  <input type="text" id="name" name="name" [(ngModel)]="newCity.name" required>
+
+  <label for="country">Country:</label>
+  <input type="text" id="country" name="country" [(ngModel)]="newCity.country" required>
+
+  <!-- Add other input fields as needed -->
+
+  <button type="submit">Add City</button>
+</form>
